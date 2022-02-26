@@ -1,0 +1,213 @@
+@import './partials/global';
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* CSS Variables */
+:root {
+  --primary--bg: #fff0ed;
+  --secondary--bg: #f7f7f7;
+  --dark-color: #393939;
+  --accent-color: #5bacc3;
+  --light-color: #fff;
+}
+
+/* Utility Class */
+h1,
+h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+h3,
+nav {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+nav ul li {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+a {
+  color: var(--dark-color);
+}
+
+/* Header & Nav */
+#nav-bar {
+  background-color: var(--primary--bg);
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar.left {
+  display: flex;
+  width: 80%;
+
+  .icon {
+    padding-top: 15px;
+  }
+}
+
+.nav-bar.right {
+  width: 20%;
+
+  ul {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    
+
+    li span {
+      color: var(--accent-color);
+    }
+  }
+}
+
+/* Menu Banner */
+#menu-banner {
+  background-image: url(/Asset/coffee-circle.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 575px;
+  max-height: 600px;
+
+    .container {
+      justify-content: center;
+      align-items: center;
+      min-height: 575px;
+      max-height: 600px;
+      display: flex;
+    }
+
+    .titlebox_container {
+      max-width: 300px;
+      min-height: 180px;
+      max-height: 200px;
+      position: relative;
+      background-color: var(--dark-color);
+      min-width: 280px;
+    }
+
+    .titlebox {
+      max-width: 300px;
+      min-height: 180px;
+      max-height: 200px;
+      border: solid 5px var(--accent-color);
+      color: var(--light-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      min-width: 280px;
+    }
+  }
+
+/* Menu Sub Nav */
+
+#sub-navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: var(--dark-color);
+
+
+  .sub {
+    min-height: 60px;
+    max-height: 80px;
+    padding: 10px;
+  
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    
+      li {
+        margin: 5px;
+      
+        a {
+          border-left: 4px solid var(--accent-color);
+          color: var(--light-color);
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+/* Menu Category */
+#menu-category .container {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-category {
+  padding: 50px 30% 50px 30%;
+}
+
+.menu-category:first-child {
+  background-color: var(--primary--bg);
+}
+
+.menu-category:nth-child(2) {
+  background-color: var(--secondary--bg);
+}
+
+.menu-category:nth-child(3) {
+  background-color: var(--primary--bg);
+}
+
+.menu-category .hotdrinks,
+.menu-category .colddrinks,
+.menu-category .pastries {
+  padding: 10px;
+}
+
+p.descrip {
+  font-style: italic;
+  color: var(--dark-color);
+}
+
+p.price {
+  color: var(--accent-color);
+  padding-top: 30px;
+}
+/* Icon */
+.icon {
+  min-width: 50px;
+  max-width: 120px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 780px) {
+  #nav-bar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 10px;
+    margin: 0 auto;
+  }
+}
