@@ -115,6 +115,13 @@ a {
       top: -20px;
       left: -20px;
       min-width: 280px;
+
+      &:hover {
+        left: -5px;
+        top: -5px;
+        min-width: 280px;
+        min-height: 180px;
+      }
     }
   }
 

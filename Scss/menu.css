@@ -144,6 +144,13 @@ a {
   min-width: 280px;
 }
 
+#menu-banner .titlebox:hover {
+  left: -5px;
+  top: -5px;
+  min-width: 280px;
+  min-height: 180px;
+}
+
 /* Menu Sub Nav */
 #sub-navbar {
   width: 100%;
