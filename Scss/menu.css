@@ -17,6 +17,7 @@ body {
   --dark-color: #393939;
   --accent-color: #5bacc3;
   --light-color: #fff;
+  --lightdark-color: #909090;
 }
 
 /* Utility Class */
@@ -196,7 +197,7 @@ a {
 }
 
 .menu-category {
-  padding: 50px 30% 50px 30%;
+  padding: 50px 30%;
 }
 
 .menu-category:first-child {
@@ -211,18 +212,16 @@ a {
   background-color: var(--primary--bg);
 }
 
-.menu-category .hotdrinks,
-.menu-category .colddrinks,
-.menu-category .pastries {
+.menu-category .hotdrinks, .menu-category .colddrinks, .menu-category .pastries {
   padding: 10px;
 }
 
-p.descrip {
+.menu-category .descrip {
   font-style: italic;
   color: var(--dark-color);
 }
 
-p.price {
+.menu-category .price {
   color: var(--accent-color);
   padding-top: 30px;
 }

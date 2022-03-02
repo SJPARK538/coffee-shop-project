@@ -1,20 +1,7 @@
 @import './partials/global';
+@import './partials/mixin';
+@import './partials/variable';
 
-* {
-  list-style: none;
-  text-decoration: none;
-  margin: 0;
-  line-height: 1.5;
-}
-
-/* CSS Variables */
-:root {
-  --primary--bg: #fff0ed;
-  --secondary--bg: #f7f7f7;
-  --dark-color: #393939;
-  --accent-color: #5bacc3;
-  --light-color: #fff;
-}
 
 /* Utility Class */
 h1,
@@ -157,7 +144,6 @@ a {
   }
 }
 
-
 /* Menu Category */
 #menu-category .container {
   box-sizing: border-box;
@@ -166,36 +152,37 @@ a {
 }
 
 .menu-category {
-  padding: 50px 30% 50px 30%;
+  padding: 50px 30%;
+
+
+  &:first-child {
+    background-color: var(--primary--bg);
+  }
+
+
+  &:nth-child(2) {
+    background-color: var(--secondary--bg);
+  }
+
+  &:nth-child(3) {
+    background-color: var(--primary--bg);
+  }
+
+  .hotdrinks, .colddrinks, .pastries {
+    padding: 10px;
+  }
+
+  .descrip {
+    font-style: italic;
+    color: var(--dark-color);
+  }
+
+  .price {
+    color: var(--accent-color);
+    padding-top: 30px;
+  }
 }
 
-.menu-category:first-child {
-  background-color: var(--primary--bg);
-}
-
-.menu-category:nth-child(2) {
-  background-color: var(--secondary--bg);
-}
-
-.menu-category:nth-child(3) {
-  background-color: var(--primary--bg);
-}
-
-.menu-category .hotdrinks,
-.menu-category .colddrinks,
-.menu-category .pastries {
-  padding: 10px;
-}
-
-p.descrip {
-  font-style: italic;
-  color: var(--dark-color);
-}
-
-p.price {
-  color: var(--accent-color);
-  padding-top: 30px;
-}
 /* Icon */
 .icon {
   min-width: 50px;

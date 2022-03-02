@@ -14,8 +14,8 @@ body {
 :root {
   --primary--bg: #fff0ed;
   --secondary--bg: #f7f7f7;
-  --accent-color: #5bacc3;
   --dark-color: #393939;
+  --accent-color: #5bacc3;
   --light-color: #fff;
   --lightdark-color: #909090;
 }
@@ -140,7 +140,7 @@ a {
 /* Product Section */
 #products {
   background-color: var(--secondary--bg);
-  padding: 50px 0 50px 0;
+  padding: 50px 0;
 }
 
 #products .section-head {
@@ -412,11 +412,11 @@ footer .container {
   position: relative;
 }
 
-.footer-division .division {
+footer .footer-division .division {
   padding-bottom: 20px;
 }
 
-p.info.info_hours span {
+footer p.info.info_hours span {
   font-weight: 700;
 }
 
@@ -437,11 +437,11 @@ p.info.info_hours span {
   font-size: 1.5rem;
   font-weight: 400;
   border: solid 2px black;
+  bottom: 5px;
+  right: 5px;
   color: var(--light-color);
   display: block;
   position: absolute;
-  bottom: 5px;
-  right: 5px;
 }
 
 .btn:hover {

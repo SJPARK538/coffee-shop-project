@@ -1,22 +1,7 @@
 @import './partials/global';
+@import './partials/mixin';
+@import './partials/variable';
 
-* {
-  list-style: none;
-  text-decoration: none;
-  margin: 0;
-  line-height: 1.5;
-  
-}
-
-/* CSS Variables */
-:root {
-  --primary--bg: #fff0ed;
-  --secondary--bg: #f7f7f7;
-  --accent-color: #5bacc3;
-  --dark-color: #393939;
-  --light-color: #fff;
-  --lightdark-color: #909090;
-}
 
 /* Utility Class */
 .container {
@@ -117,7 +102,7 @@ a {
 /* Product Section */
 #products {
   background-color: var(--secondary--bg);
-  padding: 50px 0 50px 0;
+  padding: 50px 0;
 
   .section-head {
     text-align: center;
@@ -265,9 +250,7 @@ p.price {
         transform: rotate(360deg);
       }
     }
-
   }
-
 }
 
 /* Discount Section */
@@ -304,7 +287,6 @@ p.code {
     }
 
   }
-  
     span {
       font-weight: 700;
     }
@@ -314,21 +296,24 @@ p.code {
 footer {
   background-color: var(--primary--bg);
 
-
   .container {
     display: flex;
     justify-content: space-between;
     padding: 50px;
     position: relative;
   }
+  .footer-division {
+    .division {
+    padding-bottom: 20px;
+    }
+  }
+    p.info.info_hours span {
+    font-weight: 700;
+  }
 }
 
-.footer-division .division {
-  padding-bottom: 20px;
-}
-p.info.info_hours span {
-  font-weight: 700;
-}
+
+
 /* button */
 
 .btn-shadow {
@@ -339,29 +324,19 @@ p.info.info_hours span {
   position: relative;
 }
 .btn {
-  padding: 1rem;
-  text-align: center;
-  min-width: 150px;
-  max-width: 15%;
-  font-size: 1.5rem;
-  font-weight: 400;
-  border: solid 2px black;
+@include button;
   color: var(--light-color);
   display: block;
   position: absolute;
-  bottom: 5px;
-  right: 5px;
-
 
   &:hover {
     position: absolute;
     top: 1.5px;
     right: 1px;
     height: 2rem;
-
-
   }
 }
+
 
 /* Images */
 .img {
